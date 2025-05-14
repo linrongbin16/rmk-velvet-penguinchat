@@ -63,7 +63,8 @@ keymap = [
 [[input_device.encoder]]
 pin_a = "P0_03"
 pin_b = "P0_29"
-resolution = 2 # 24定位12脉冲，12*4/24=2
+internal_pullup = false
+phase = "e8h7" # 24定位12脉冲，12*4/24=2
 # Whether the direction of the rotary encoder is reversed.
 reverse = false
 
