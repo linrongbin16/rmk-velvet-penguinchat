@@ -62,7 +62,7 @@ keymap = [
 # TTC防尘金轮鼠标编码器
 [[input_device.encoder]]
 pin_a = "P0_29"
-pin_b = "P0_20"
+pin_b = "P0_02"
 internal_pullup = false
 phase = "e8h7" # 24定位12脉冲，12*4/24=2
 # Whether the direction of the rotary encoder is reversed.
