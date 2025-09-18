@@ -73,8 +73,8 @@ cols = 6
 row_offset = 0
 col_offset = 0
 [split.central.matrix]
-input_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
-output_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+input_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+output_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
 
 
 [[split.peripheral]]
@@ -83,5 +83,5 @@ cols = 6
 row_offset = 0
 col_offset = 6
 [split.peripheral.matrix]
-input_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
-output_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+input_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+output_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
