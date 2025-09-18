@@ -50,6 +50,11 @@ keymap = [
     ],
 ]
 
+[rmk]
+# Maximum number of combos keyboard can store
+combo_max_num = 15
+# Maximum number of keys pressed simultaneously in a combo
+combo_max_length = 4
 
 [storage]
 # Storage feature is enabled by default
