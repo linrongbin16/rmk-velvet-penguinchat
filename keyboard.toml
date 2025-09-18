@@ -57,8 +57,6 @@ keymap = [
 
 [split]
 connection = "ble"
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
-row2col = true
 
 # Ble configuration
 [ble]
@@ -77,6 +75,8 @@ ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
 matrix_type = "normal"
 input_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
 output_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
+row2col = true
 
 
 [[split.peripheral]]
@@ -89,3 +89,5 @@ ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 matrix_type = "normal"
 input_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
 output_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
+row2col = true
