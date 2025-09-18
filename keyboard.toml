@@ -7,9 +7,11 @@ product_id = 0x4643
 manufacturer = "Noir Guo"
 chip = "nrf52840"
 
-[layout]
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
+[matrix]
+# WARNING: Currently row2col/col2row is set in RMK's feature gate, row2col config here is valid ONLY when you're using cloud compilation
 row2col = true
+
+[layout]
 rows = 4
 cols = 12
 layers = 6
@@ -75,8 +77,8 @@ col_offset = 0
 ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
 [split.central.matrix]
 matrix_type = "normal"
-output_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
-input_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+input_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
+output_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
 
 
 [[split.peripheral]]
@@ -87,5 +89,5 @@ col_offset = 6
 ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 [split.peripheral.matrix]
 matrix_type = "normal"
-output_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
-input_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+input_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
+output_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
