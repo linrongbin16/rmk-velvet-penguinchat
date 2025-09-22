@@ -69,6 +69,7 @@ connection = "ble"
 enabled = true
 # nRF52840's saadc pin for reading battery level, you can use a pin number or "vddh"
 battery_adc_pin = "vddh"
+default_tx_power = 8
 
 [split.central]
 rows = 4
