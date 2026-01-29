@@ -56,7 +56,7 @@ combo_max_num = 15
 # Maximum number of keys pressed simultaneously in a combo
 combo_max_length = 4
 debounce_time = 3
-# ble_profiles_num = 3
+ble_profiles_num = 3
 
 [storage]
 # Storage feature is enabled by default
