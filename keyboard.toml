@@ -32,27 +32,29 @@ layers = 8
 name = "qwer_mac"
 keys = """
       Tab Q W E R T                                                           Y U I O P CapsLock
-      LCtrl A MT(S, LAlt, HRM) MT(D, LShift, HRM) F G                         H J MT(K, RShift, HRM) MT(L, RAlt, HRM) Semicolon Quote
-      MO(4) MT(Z,LGui) X C V B                                    N M Comma Dot Slash Backspace
-                               LT(6, Escape, ThumbTap) MO(2) Space         LT(5, Enter, ThumbTap) MO(3) LT(2, Backspace, ThumbTap)
+      LCtrl A MT(S, LAlt, HRM) MT(D, LShift, HRM) F G                         H J MT(K, RShift, HRM) MT(L, RAlt, HRM) Semicolon RCtrl
+      LGui Z X C V B                                                          N M Comma Dot Slash RGui
+      LT(2, Escape, THU) LT(2, Space, THU) LT(3, Backslash)                   Quote LT(3) LT(2, Enter, THU) LT(5, Backspace, THU)
 """
+
 [[layer]]
 # layer 1 - Qwer for Windows
 name = "qwer_win"
 keys = """
-        __ __ __ __ __ __                                             __ __ __ __ __ __
-        __ MT(A,LCtrl) MT(S,LAlt) MT(D,LCtrl) MT(F,LShift) __       __ MT(J,RShift) MT(K,RCtrl) MT(L,RAlt) MT(Semicolon,RCtrl) __
-        LGui __ __ __ __ __                                          __ __ __ __ __ __
-                               __ __ __                                __ __ __
+      Tab Q W E R T                                                           Y U I O P CapsLock
+      LCtrl A MT(S, LAlt, HRM) MT(D, LShift, HRM) F G                         H J MT(K, RShift, HRM) MT(L, RAlt, HRM) Semicolon RCtrl
+      LGui Z X C V B                                                          N M Comma Dot Slash RGui
+      LT(2, Escape, THU) LT(2, Space, THU) LT(3, Backslash)                   Quote LT(3) LT(2, Enter, THU) LT(5, Backspace, THU)
 """
+
 [[layer]]
 # layer 2 - Function
-name = "symbol_layer"
+name = "fun"
 keys = """
-        __ WM(Kc1,LShift) WM(Kc2,LShift) WM(Kc3,LShift) WM(Kc4,LShift) WM(Kc5,LShift)   WM(Kc6,LShift) WM(Kc7,LShift) WM(Kc8,LShift) WM(Kc9,LShift) WM(Kc0,LShift) WM(Backslash,LShift)
-        __ __ LeftBracket RightBracket WM(LeftBracket,LShift) WM(RightBracket,LShift)    Equal WM(Minus,LShift) Minus WM(Equal,LShift) WM(Quote,LShift) WM(Semicolon,LShift)
-        __ __ RightBracket WM(Kc9,LShift) WM(Backslash,LShift) Backslash                Slash WM(Slash,LShift) Grave WM(Grave,LShift) Quote __
-                               __ __ __                                                  WM(Grave,LShift) MO(4) Grave
+      _ @Bt0 @Bt1 @Bt2 No No                                                  F10 F7 F8 F9 No No
+      _ No LAlt LShift No No                                                  F11 F4 F5 F6 No No
+      _ @BtClear No No No @BtSwitch                                           F12 F1 F2 F3 TO(0) TO(1)
+      No No No                                                                No No Delete
 """
 
 [[layer]]
@@ -124,6 +126,7 @@ unilateral_tap = true
 
 [behavior.morse.profiles]
 HRM = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = true }
+THU = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = true }
 
 
 [split]
