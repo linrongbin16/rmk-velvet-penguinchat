@@ -134,35 +134,35 @@ THU = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = tru
 
 [[behavior.macro.macros]]
 # Macro-0: <-
-operations = [{ operation = "text", keycode = "<-" }]
+operations = [{ operation = "text", text = "<-" }]
 
 [[behavior.macro.macros]]
 # Macro-1: ->
-operations = [{ operation = "text", keycode = "->" }]
+operations = [{ operation = "text", text = "->" }]
 
 [[behavior.macro.macros]]
 # Macro-2: =>
-operations = [{ operation = "text", keycode = "=>" }]
+operations = [{ operation = "text", text = "=>" }]
 
 [[behavior.macro.macros]]
 # Macro-3: <=
-operations = [{ operation = "text", keycode = "<=" }]
+operations = [{ operation = "text", text = "<=" }]
 
 [[behavior.macro.macros]]
 # Macro-4: >=
-operations = [{ operation = "text", keycode = ">=" }]
+operations = [{ operation = "text", text = ">=" }]
 
 [[behavior.macro.macros]]
 # Macro-5: !=
-operations = [{ operation = "text", keycode = "!=" }]
+operations = [{ operation = "text", text = "!=" }]
 
 [[behavior.macro.macros]]
 # Macro-6: +=
-operations = [{ operation = "text", keycode = "+=" }]
+operations = [{ operation = "text", text = "+=" }]
 
 [[behavior.macro.macros]]
 # Macro-7: -=
-operations = [{ operation = "text", keycode = "-=" }]
+operations = [{ operation = "text", text = "-=" }]
 
 [split]
 connection = "ble"
