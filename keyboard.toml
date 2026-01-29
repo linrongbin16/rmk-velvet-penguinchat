@@ -132,56 +132,56 @@ HRM = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = tru
 THU = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = true }
 
 [[behavior.macro.macros]]
-# <-
+# Macro-0: <-
 operations = [
   { operation = "tap", keycode = "WM(Comma,LShift)" },
   { operation = "tap", keycode = "-" },
 ]
 
 [[behavior.macro.macros]]
-# ->
+# Macro-1: ->
 operations = [
   { operation = "tap", keycode = "-" },
   { operation = "tap", keycode = "WM(Dot,LShift)" },
 ]
 
 [[behavior.macro.macros]]
-# =>
+# Macro-2: =>
 operations = [
   { operation = "tap", keycode = "=" },
   { operation = "tap", keycode = "WM(Dot,LShift)" },
 ]
 
 [[behavior.macro.macros]]
-# <=
+# Macro-3: <=
 operations = [
   { operation = "tap", keycode = "WM(Comma,LShift)" },
   { operation = "tap", keycode = "=" },
 ]
 
 [[behavior.macro.macros]]
-# >=
+# Macro-4: >=
 operations = [
   { operation = "tap", keycode = "WM(Dot,LShift)" },
   { operation = "tap", keycode = "=" },
 ]
 
 [[behavior.macro.macros]]
-# !=
+# Macro-5: !=
 operations = [
   { operation = "tap", keycode = "WM(1,LShift)" },
   { operation = "tap", keycode = "=" },
 ]
 
 [[behavior.macro.macros]]
-# +=
+# Macro-6: +=
 operations = [
   { operation = "tap", keycode = "WM(=,LShift)" },
   { operation = "tap", keycode = "=" },
 ]
 
 [[behavior.macro.macros]]
-# -=
+# Macro-7: -=
 operations = [
   { operation = "tap", keycode = "-" },
   { operation = "tap", keycode = "=" },
