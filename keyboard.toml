@@ -42,9 +42,9 @@ keys = """
 name = "qwer_win"
 keys = """
       Tab Q W E R T                                                           Y U I O P CapsLock
-      LCtrl A MT(S, LAlt, HRM) MT(D, LShift, HRM) F G                         H J MT(K, RShift, HRM) MT(L, RAlt, HRM) Semicolon RCtrl
+      LCtrl A MT(S,LAlt,HRM) MT(D,LShift,HRM) F G                             H J MT(K,RShift,HRM) MT(L,RAlt,HRM) Semicolon RCtrl
       LGui Z X C V B                                                          N M Comma Dot Slash RGui
-      LT(2, Escape, THU) LT(2, Space, THU) LT(3, Backslash)                   Quote LT(3) LT(2, Enter, THU) LT(5, Backspace, THU)
+      LT(2,Escape,THU) LT(2,Space,THU) LT(3,Backslash)                        Quote LT(2,Enter,THU) LT(5,Backspace,THU)
 """
 
 [[layer]]
@@ -58,52 +58,55 @@ keys = """
 """
 
 [[layer]]
-#layer 3 - Raise/Mix
-name = "mix_layer"
+# layer 3 - Navigation
+name = "nav"
 keys = """
-        LShift F1 F2 F3 F4 F5                                           F6 F7 F8 F9 F10 F11
-        LCtrl Kc5 Kc4 Kc3 Kc2 Kc1                                     Backspace Minus Equal WM(Equal,LShift) Quote F12
-        LGui Kc6 Kc7 Kc8 Kc9 Kc0                                     Tab Insert Home End __ __
-                               Tab MO(4) Backspace                      __ __ Kc3
-"""
-[[layer]]
-#layer 4 - Adjust
-name = "adjust_layer"
-keys = """
-        @Bt0 @BtPre __ __ __ __                                           __ __ __ __ __ __
-        @Bt1 @BtNext __ __ __ __                                           TG(1) TO(0) __ __ __ TG(1)
-        @Bt2 @BtClear @BtSwitch @BtClear __ __                                           __ __ __ __ __ CapsLock
-                               __ __ __                               __ __ Kc4
-"""
-[[layer]]
-#layer 5 - Navigation
-name = "navigation_layer"
-keys = """
-        __ __ __ MouseUp PageUp PageDown                            MouseBtn1 MouseBtn3 MouseBtn2 MouseWheelUp MouseWheelDown __
-        __ __ MouseLeft MouseDown MouseRight MouseWheelUp           Left Down Up Right __ __
-        __ __ __ __ __ MouseWheelDown                               __ __ __ __ __ __
-                               MO(7) __ __                          __ __ Kc5
+      _ No Home Up End No                                                     No No No No No _
+      _ No Left Down Right No                                                 No No No No No _
+      _ No PageDown No PageUp No                                              No No No No No _
+      No No No                                                                No No No
 """
 
 [[layer]]
-#layer 6 - Number/Keypad
-name = "number_layer"
+# layer 4 - Number
+name = "num"
 keys = """
-        MO(7) __ __ __ __ __                                        Kp7 Kp8 Kp9 KpMinus KpAsterisk __
-        __ __ __ __ __ __                                           Kp4 Kp5 Kp6 KpPlus KpSlash __
-        __ __ __ __ __ __                                           Kp1 Kp2 Kp3 __ __ __
-                               __ __ __                             Kp0 KpDot Kp0
+      _ No 7 8 9 0                                                            No No No No No _
+      _ No 4 5 6 -                                                            No No No No No _
+      _ No 1 2 3 =                                                            No No No No No _
+      [ ] `                                                                   No No No
 """
 
 [[layer]]
-#layer 7 - Debug
-name = "debug_layer"
+# layer 5 - Symbol
+name = "sym"
 keys = """
-        __ __ __ __ __ __                                           __ __ __ __ __ __
-        __ __ __ __ __ __                                           __ __ __ __ __ __
-        __ __ __ __ __ Bootloader                                   Bootloader __ __ __ __ __
-                               __ __ __                               __ __ Kc7
+      _ No WM(7,LShift) WM(8,LShift) WM(9,LShift) WM(0,LShift)                No No No No No _
+      _ No WM(4,LShift) WM(5,LShift) WM(6,LShift) WM(-,LShift)                No No No No No _
+      _ No WM(1,LShift) WM(2,LShift) WM(3,LShift) WM(=,LShift)                No No No No No _
+      WM([,LShift) WM(],LShift) WM(`,LShift)                                  No No No
 """
+
+[[layer]]
+# layer 6 - Edit for Mac
+name = "edit_mac"
+keys = """
+      _ WM(Q,LAlt) WM(W,LAlt) WM(E,LAlt) WM(R,LAlt) WM(T,LAlt)                WM(Y,LAlt) No No No No _
+      _ WM(A,LAlt) WM(S,LAlt) WM(D,LAlt) WM(F,LAlt) WM(G,LAlt)                WM(H,LAlt) No RShift RAlt No _
+      _ WM(Z,LAlt) WM(X,LAlt) WM(C,LAlt) WM(V,LAlt) WM(B,LAlt)                WM(N,LAlt) No No No No _
+      No No No                                                                No No No
+"""
+
+[[layer]]
+# layer 7 - Edit for Windows
+name = "edit_win"
+keys = """
+      _ WM(Q,LCtrl) WM(W,LCtrl) WM(E,LCtrl) WM(R,LCtrl) WM(T,LCtrl)           WM(Y,LCtrl) No No No No _
+      _ WM(A,LCtrl) WM(S,LCtrl) WM(D,LCtrl) WM(F,LCtrl) WM(G,LCtrl)           WM(H,LCtrl) No RShift RAlt No _
+      _ WM(Z,LCtrl) WM(X,LCtrl) WM(C,LCtrl) WM(V,LCtrl) WM(B,LCtrl)           WM(N,LCtrl) No No No No _
+      No No No                                                                No No No
+"""
+
 
 [rmk]
 combo_max_num = 15
