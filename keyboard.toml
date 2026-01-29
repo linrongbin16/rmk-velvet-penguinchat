@@ -117,17 +117,13 @@ ble_profiles_num = 3
 # default profile for morse, tap dance and tap-hold keys:
 [behavior.morse]
 enable_flow_tap = true
-prior_idle_time = "30ms"
-hold_timeout = "240ms"
-gap_timeout = "230ms"
+prior_idle_time = "80ms"
 permissive_hold = true
 hold_on_other_press = true
 unilateral_tap = true
 
 [behavior.morse.profiles]
-# matrix_map may refer these to override the defaults given in [behavior.morse] for some key positions - this example is a home row mod
-HRM = { permissive_hold = true, unilateral_tap = true, hold_timeout = "250ms" }
-ThumbTap = { permissive_hold = false, unilateral_tap = false, hold_timeout = "250ms", hold_on_other_press = true }
+HRM = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = true }
 
 
 [split]
