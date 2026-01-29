@@ -131,6 +131,39 @@ unilateral_tap = true
 HRM = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = true }
 THU = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = true }
 
+[[behavior.macro.macros]]
+left_arrow = [
+  { operation = "tap", keycode = "WM(Comma,LShift)" },
+  { operation = "tap", keycode = "-" },
+]
+right_arrow = [
+  { operation = "tap", keycode = "-" },
+  { operation = "tap", keycode = "WM(Dot,LShift)" },
+]
+bold_right_arrow = [
+  { operation = "tap", keycode = "=" },
+  { operation = "tap", keycode = "WM(Dot,LShift)" },
+]
+less_equal = [
+  { operation = "tap", keycode = "WM(Comma,LShift)" },
+  { operation = "tap", keycode = "=" },
+]
+greater_equal = [
+  { operation = "tap", keycode = "WM(Dot,LShift)" },
+  { operation = "tap", keycode = "=" },
+]
+not_equal = [
+  { operation = "tap", keycode = "WM(1,LShift)" },
+  { operation = "tap", keycode = "=" },
+]
+plus_assign = [
+  { operation = "tap", keycode = "WM(=,LShift)" },
+  { operation = "tap", keycode = "=" },
+]
+minus_assign = [
+  { operation = "tap", keycode = "-" },
+  { operation = "tap", keycode = "=" },
+]
 
 [split]
 connection = "ble"
