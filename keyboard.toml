@@ -7,6 +7,15 @@ product_id = 0x4643
 manufacturer = "Noir Guo"
 chip = "nrf52840"
 
+[aliases]
+Bt0 = "BT0"
+Bt1 = "BT1"
+Bt2 = "BT2"
+BtNext = "NEXT_BT"
+BtPre = "PREV_BT"
+BtClear = "CLR_BT"
+BtSwitch = "SWITCH"
+
 [layout]
 matrix_map = """
             (0,0, L) (0,1, L) (0,2, L) (0,3, L) (0,4, L) (0,5, L)                        (4,5, R) (4,4, R) (4,3, R) (4,2, R) (4,1, R) (4,0, R)
@@ -59,9 +68,9 @@ keys = """
 #layer 4 - Adjust
 name = "adjust_layer"
 keys = """
-        @Bt1 @BtPre __ __ __ __                                           __ __ __ __ __ __
-        @Bt2 @BtNext __ __ __ __                                           TG(1) TO(0) __ __ __ TG(1)
-        @Bt3 @BtClear @BtUsb @BtClear __ __                                           __ __ __ __ __ CapsLock
+        @Bt0 @BtPre __ __ __ __                                           __ __ __ __ __ __
+        @Bt1 @BtNext __ __ __ __                                           TG(1) TO(0) __ __ __ TG(1)
+        @Bt2 @BtClear @BtSwitch @BtClear __ __                                           __ __ __ __ __ CapsLock
                                __ __ __                               __ __ Kc4
 """
 [[layer]]
