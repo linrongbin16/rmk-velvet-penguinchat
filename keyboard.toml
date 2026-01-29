@@ -28,8 +28,8 @@ cols = 6
 layers = 8
 
 [[layer]]
-#layer 0 - Base
-name = "base_layer"
+# layer 0 - Qwer for Mac
+name = "qwer_mac"
 keys = """
         Tab Q W E R T                                                Y U I O P Backslash
         Escape MT(A, LCtrl, HRM) MT(S, LAlt, HRM) MT(D, LGui, HRM) MT(F, LShift, HRM) G    H MT(J, RShift, HRM) MT(K, RGui, HRM) MT(L, RAlt, HRM) MT(Semicolon, RCtrl, HRM) Quote
@@ -37,8 +37,8 @@ keys = """
                                LT(6, Escape, ThumbTap) MO(2) Space         LT(5, Enter, ThumbTap) MO(3) LT(2, Backspace, ThumbTap)
 """
 [[layer]]
-#layer 1 - Windows
-name = "windows_layer"
+# layer 1 - Qwer for Windows
+name = "qwer_win"
 keys = """
         __ __ __ __ __ __                                             __ __ __ __ __ __
         __ MT(A,LCtrl) MT(S,LAlt) MT(D,LCtrl) MT(F,LShift) __       __ MT(J,RShift) MT(K,RCtrl) MT(L,RAlt) MT(Semicolon,RCtrl) __
@@ -46,7 +46,7 @@ keys = """
                                __ __ __                                __ __ __
 """
 [[layer]]
-#layer 2 - Lower/Symbols
+# layer 2 - Function
 name = "symbol_layer"
 keys = """
         __ WM(Kc1,LShift) WM(Kc2,LShift) WM(Kc3,LShift) WM(Kc4,LShift) WM(Kc5,LShift)   WM(Kc6,LShift) WM(Kc7,LShift) WM(Kc8,LShift) WM(Kc9,LShift) WM(Kc0,LShift) WM(Backslash,LShift)
