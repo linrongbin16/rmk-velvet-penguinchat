@@ -4,6 +4,7 @@ name = "Velvet"
 product_name = "Velvet"
 vendor_id = 0x4c4b
 product_id = 0x4643
+serial_number = "vial:f64c2b3c" # Recognize by vial
 manufacturer = "Noir Guo"
 chip = "nrf52840"
 
@@ -133,59 +134,35 @@ THU = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = tru
 
 [[behavior.macro.macros]]
 # Macro-0: <-
-operations = [
-  { operation = "tap", keycode = "WM(Comma,LShift)" },
-  { operation = "tap", keycode = "-" },
-]
+operations = [{ operation = "text", keycode = "<-" }]
 
 [[behavior.macro.macros]]
 # Macro-1: ->
-operations = [
-  { operation = "tap", keycode = "-" },
-  { operation = "tap", keycode = "WM(Dot,LShift)" },
-]
+operations = [{ operation = "text", keycode = "->" }]
 
 [[behavior.macro.macros]]
 # Macro-2: =>
-operations = [
-  { operation = "tap", keycode = "=" },
-  { operation = "tap", keycode = "WM(Dot,LShift)" },
-]
+operations = [{ operation = "text", keycode = "=>" }]
 
 [[behavior.macro.macros]]
 # Macro-3: <=
-operations = [
-  { operation = "tap", keycode = "WM(Comma,LShift)" },
-  { operation = "tap", keycode = "=" },
-]
+operations = [{ operation = "text", keycode = "<=" }]
 
 [[behavior.macro.macros]]
 # Macro-4: >=
-operations = [
-  { operation = "tap", keycode = "WM(Dot,LShift)" },
-  { operation = "tap", keycode = "=" },
-]
+operations = [{ operation = "text", keycode = ">=" }]
 
 [[behavior.macro.macros]]
 # Macro-5: !=
-operations = [
-  { operation = "tap", keycode = "WM(1,LShift)" },
-  { operation = "tap", keycode = "=" },
-]
+operations = [{ operation = "text", keycode = "!=" }]
 
 [[behavior.macro.macros]]
 # Macro-6: +=
-operations = [
-  { operation = "tap", keycode = "WM(=,LShift)" },
-  { operation = "tap", keycode = "=" },
-]
+operations = [{ operation = "text", keycode = "+=" }]
 
 [[behavior.macro.macros]]
 # Macro-7: -=
-operations = [
-  { operation = "tap", keycode = "-" },
-  { operation = "tap", keycode = "=" },
-]
+operations = [{ operation = "text", keycode = "-=" }]
 
 [split]
 connection = "ble"
