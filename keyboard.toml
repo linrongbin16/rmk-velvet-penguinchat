@@ -79,13 +79,12 @@ cols = 6
 row_offset = 0
 col_offset = 0
 ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
-[split.central.matrix]
-matrix_type = "normal"
-output_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
-input_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
-row2col = true
 
+[split.central.matrix]
+## promicro pin: 4 5 6 7
+row_pins = ["P0_22", "P0_24", "P1_00", "P0_11"]
+## promicro pin: 21 20 19 18 15 14
+col_pins = ["P0_31", "P0_29", "P0_02", "P1_15", "P1_13", "P1_11"]
 
 [[split.peripheral]]
 rows = 4
@@ -93,9 +92,10 @@ cols = 6
 row_offset = 0
 col_offset = 6
 ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
+
 [split.peripheral.matrix]
-matrix_type = "normal"
-output_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
-input_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
-row2col = true
+
+## promicro pin: 4 5 6 7
+row_pins = ["P0_22", "P0_24", "P1_00", "P0_11"]
+## promicro pin: 21 20 19 18 15 14
+col_pins = ["P0_31", "P0_29", "P0_02", "P1_15", "P1_13", "P1_11"]
