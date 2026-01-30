@@ -117,6 +117,7 @@ ble_profiles_num = 3
 
 [storage]
 # enabled = true
+clear_storage = true
 
 [behavior]
 
