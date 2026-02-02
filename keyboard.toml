@@ -197,3 +197,6 @@ ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
 [split.peripheral.matrix]
 row_pins = ["P1_11", "P0_10", "P0_09", "P0_06"]
 col_pins = ["P1_00", "P0_24", "P0_22", "P0_20", "P0_17", "P0_08"]
+
+[dependency]
+defmt_log = false
