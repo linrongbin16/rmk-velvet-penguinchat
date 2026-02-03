@@ -19,10 +19,10 @@ BtUsb = "User6"
 
 [layout]
 matrix_map = """
-      (0,0, L) (0,1, L) (0,2, L) (0,3, L) (0,4, L) (0,5, L)                   (0,6, R) (0,7, R) (0,8, R) (0,9, R) (0,10, R) (0,11, R)
-      (1,0, L) (1,1, L) (1,2, L) (1,3, L) (1,4, L) (1,5, L)                   (1,6, R) (1,7, R) (1,8, R) (1,9, R) (1,10, R) (1,11, R)
-      (2,0, L) (2,1, L) (2,2, L) (2,3, L) (2,4, L) (2,5, L)                   (2,6, R) (2,7, R) (2,8, R) (2,9, R) (2,10, R) (2,11, R)
-      (3,0, L) (3,1, L) (3,2, L) (3,3, L) (3,4, L) (3,5, L)                   (3,6, R) (3,7, R) (3,8, R) (3,9, R) (3,10, R) (3,11, R)
+(0,0, L) (0,1, L) (0,2, L) (0,3, L) (0,4, L) (0,5, L)           (0,6, R) (0,7, R) (0,8, R) (0,9, R) (0,10, R) (0,11, R)
+(1,0, L) (1,1, L) (1,2, L) (1,3, L) (1,4, L) (1,5, L)           (1,6, R) (1,7, R) (1,8, R) (1,9, R) (1,10, R) (1,11, R)
+(2,0, L) (2,1, L) (2,2, L) (2,3, L) (2,4, L) (2,5, L)           (2,6, R) (2,7, R) (2,8, R) (2,9, R) (2,10, R) (2,11, R)
+(3,0, L) (3,1, L) (3,2, L) (3,3, L) (3,4, L) (3,5, L)           (3,6, R) (3,7, R) (3,8, R) (3,9, R) (3,10, R) (3,11, R)
 """
 rows = 4
 cols = 12
@@ -32,80 +32,80 @@ layers = 8
 # layer 0 - Qwer for Mac
 name = "qwer_mac"
 keys = """
-      Tab Q W E R T                                                           Y U I O P CapsLock
-      LCtrl A MT(S,LAlt,HRM) MT(D,LShift,HRM) F G                             H J MT(K,RShift,HRM) MT(L,RAlt,HRM) Semicolon RCtrl
-      LGui Z X C V B                                                          N M Comma Dot Slash RGui
-      No No No LT(2,Escape,THU) LT(6,Space,THU) LT(3,Backslash)               Quote LT(4,Enter,THU) LT(5,Backspace,THU) No No No
+Tab Q W E R T                                                   Y U I O P CapsLock
+LCtrl A MT(S,LAlt,HRM) MT(D,LShift,HRM) F G                     H J MT(K,RShift,HRM) MT(L,RAlt,HRM) Semicolon RCtrl
+LGui Z X C V B                                                  N M Comma Dot Slash RGui
+No No No LT(2,Escape,THU) LT(6,Space,THU) LT(3,Backslash)       Quote LT(4,Enter,THU) LT(5,Backspace,THU) No No No
 """
 
 [[layer]]
 # layer 1 - Qwer for Windows
 name = "qwer_win"
 keys = """
-      Tab Q W E R T                                                           Y U I O P CapsLock
-      LCtrl A MT(S,LAlt,HRM) MT(D,LShift,HRM) F G                             H J MT(K,RShift,HRM) MT(L,RAlt,HRM) Semicolon RCtrl
-      LGui Z X C V B                                                          N M Comma Dot Slash RGui
-      No No No LT(2,Escape,THU) LT(7,Space,THU) LT(3,Backslash)               Quote LT(4,Enter,THU) LT(5,Backspace,THU) No No No
+Tab Q W E R T                                                   Y U I O P CapsLock
+LCtrl A MT(S,LAlt,HRM) MT(D,LShift,HRM) F G                     H J MT(K,RShift,HRM) MT(L,RAlt,HRM) Semicolon RCtrl
+LGui Z X C V B                                                  N M Comma Dot Slash RGui
+No No No LT(2,Escape,THU) LT(7,Space,THU) LT(3,Backslash)       Quote LT(4,Enter,THU) LT(5,Backspace,THU) No No No
 """
 
 [[layer]]
 # layer 2 - Function
 name = "fun"
 keys = """
-      _ @Bt0 @Bt1 @Bt2 No No                                                  F10 F7 F8 F9 No No
-      _ No LAlt LShift No No                                                  F11 F4 F5 F6 No No
-      _ @BtClear No No No @BtUsb                                              F12 F1 F2 F3 TO(0) TO(1)
-      _ No No No No No                                                        No No Delete No No No
+_ @Bt0 @Bt1 @Bt2 No No                                          F10 F7 F8 F9 No No
+_ No LAlt LShift No No                                          F11 F4 F5 F6 No No
+_ @BtClear No No No @BtUsb                                      F12 F1 F2 F3 TO(0) TO(1)
+_ No No No No No                                                No No Delete No No No
 """
 
 [[layer]]
 # layer 3 - Navigation
 name = "nav"
 keys = """
-      _ No Home Up End No                                                     No No No No No _
-      _ No Left Down Right No                                                 No No No No No _
-      _ No PageDown No PageUp No                                              No No No No No _
-      _ No No No No No                                                        No No No No No _
+_ No Home Up End No                                             No No No No No _
+_ No Left Down Right No                                         No No No No No _
+_ No PageDown No PageUp No                                      No No No No No _
+_ No No No No No                                                No No No No No _
 """
 
 [[layer]]
 # layer 4 - Number
 name = "num"
 keys = """
-      _ No 7 8 9 0                                                            No No No No No _
-      _ No 4 5 6 -                                                            No No No No No _
-      _ No 1 2 3 =                                                            No No No No No _
-      _ No No [ ] `                                                           No No No No No _
+_ No 7 8 9 0                                                    No No No No No _
+_ No 4 5 6 -                                                    No No No No No _
+_ No 1 2 3 =                                                    No No No No No _
+_ No No [ ] `                                                   No No No No No _
 """
 
 [[layer]]
 # layer 5 - Symbol
 name = "sym"
 keys = """
-      _ No WM(7,LShift) WM(8,LShift) WM(9,LShift) WM(0,LShift)                No No No No No _
-      _ No WM(4,LShift) WM(5,LShift) WM(6,LShift) WM(-,LShift)                No No No No No _
-      _ No WM(1,LShift) WM(2,LShift) WM(3,LShift) WM(=,LShift)                No No No No No _
-      _ No No WM([,LShift) WM(],LShift) WM(`,LShift)                          No No No No No _
+_ No WM(7,LShift) WM(8,LShift) WM(9,LShift) WM(0,LShift)        No No No No No _
+_ No WM(4,LShift) WM(5,LShift) WM(6,LShift) WM(-,LShift)        No No No No No _
+_ No WM(1,LShift) WM(2,LShift) WM(3,LShift) WM(=,LShift)        No No No No No _
+_ No No WM([,LShift) WM(],LShift) WM(`,LShift)                  No No No No No _
 """
 
 [[layer]]
 # layer 6 - Edit for Mac
 name = "edit_mac"
 keys = """
-      _ WM(Q,LAlt) WM(W,LAlt) WM(E,LAlt) WM(R,LAlt) WM(T,LAlt)                WM(Y,LAlt) No No No No _
-      _ WM(A,LAlt) WM(S,LAlt) WM(D,LAlt) WM(F,LAlt) WM(G,LAlt)                WM(H,LAlt) No RShift RAlt No _
-      _ WM(Z,LAlt) WM(X,LAlt) WM(C,LAlt) WM(V,LAlt) WM(B,LAlt)                WM(N,LAlt) No No No No _
-      _ No No No No No                                                        No No No No No _
+_ WM(Q,LAlt) WM(W,LAlt) WM(E,LAlt) WM(R,LAlt) WM(T,LAlt)        WM(Y,LAlt) No No No No _
+_ WM(A,LAlt) WM(S,LAlt) WM(D,LAlt) WM(F,LAlt) WM(G,LAlt)        WM(H,LAlt) No RShift RAlt No _
+_ WM(Z,LAlt) WM(X,LAlt) WM(C,LAlt) WM(V,LAlt) WM(B,LAlt)        WM(N,LAlt) No No No No _
+_ No No No No No                                                No No No No No _
 """
 
 [[layer]]
 # layer 7 - Edit for Windows
 name = "edit_win"
 keys = """
-      _ WM(Q,LCtrl) WM(W,LCtrl) WM(E,LCtrl) WM(R,LCtrl) WM(T,LCtrl)           WM(Y,LCtrl) No No No No _
-      _ WM(A,LCtrl) WM(S,LCtrl) WM(D,LCtrl) WM(F,LCtrl) WM(G,LCtrl)           WM(H,LCtrl) No RShift RAlt No _
-      _ WM(Z,LCtrl) WM(X,LCtrl) WM(C,LCtrl) WM(V,LCtrl) WM(B,LCtrl)           WM(N,LCtrl) No No No No _
-      _ No No No No No                                                        No No No No No _
+_ WM(Q,LCtrl) WM(W,LCtrl) WM(E,LCtrl) WM(R,LCtrl) WM(T,LCtrl)   WM(Y,LCtrl) No No No No _
+_ WM(A,LCtrl) WM(S,LCtrl) WM(D,LCtrl) WM(F,LCtrl) WM(G,LCtrl)   WM(H,LCtrl) No RShift RAlt No _
+_ WM(Z,LCtrl) WM(X,LCtrl) WM(C,LCtrl) WM(V,LCtrl) WM(B,LCtrl)   WM(N,LCtrl) No No No No _
+_ No No No No No                                                No No No No No _
 """
 
 
