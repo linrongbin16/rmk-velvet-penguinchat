@@ -129,10 +129,6 @@ permissive_hold = true
 hold_on_other_press = true
 unilateral_tap = true
 
-[behavior.morse.profiles]
-HRM = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = true }
-THU = { permissive_hold = true, unilateral_tap = true, hold_on_other_press = true }
-
 [[behavior.macro.macros]]
 # Macro-0: <-
 operations = [{ operation = "text", text = "<-" }]
