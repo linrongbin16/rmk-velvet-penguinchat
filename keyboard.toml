@@ -5,7 +5,7 @@ product_name = "Velvet"
 vendor_id = 0x4c4b
 product_id = 0x4643
 serial_number = "vial:f64c2b3c" # Recognize by vial
-manufacturer = "Noir Guo"
+manufacturer = "Penguin Chat"
 chip = "nrf52840"
 
 [aliases]
